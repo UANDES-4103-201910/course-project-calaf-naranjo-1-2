@@ -8,6 +8,7 @@ one:
   username: MyString
   bio: MyText
   post: 
+  location: MyString
 
 two:
   email: MyString
@@ -17,3 +18,4 @@ two:
   username: MyString
   bio: MyText
   post: 
+  location: MyString

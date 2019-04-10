@@ -8,6 +8,7 @@ class CreateSuperAdmins < ActiveRecord::Migration[5.2]
       t.string :username
       t.text :bio
       t.reference :post
+      t.string :location
 
       t.timestamps
     end
