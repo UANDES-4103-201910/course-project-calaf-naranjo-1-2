@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @super_admin.email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @super_admin.password %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @super_admin.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @super_admin.longitude %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @super_admin.username %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @super_admin.bio %>
+</p>
+
+<p>
+  <strong>Post:</strong>
+  <%= @super_admin.post %>
+</p>
+
+<p>
+  <strong>String:</strong>
+  <%= @super_admin.string %>
+</p>
+
+<%= link_to 'Edit', edit_super_admin_path(@super_admin) %> |
+<%= link_to 'Back', super_admins_path %>

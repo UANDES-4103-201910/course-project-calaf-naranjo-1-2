@@ -6,10 +6,10 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :password
       t.text :bio
       t.float :latitude
-      t.float :longuitude
+      t.float :longitude
       t.string :location
-      t.bool :suspended
-      t.bool :blacklisted
+      t.boolean :suspended
+      t.boolean :blacklisted
       t.bool :blocked
       t.reference :post
 

@@ -7,7 +7,7 @@ one:
   email: MyString
   geofence: MyString
   location: MyString
-  longitude: 1.5
+  float: 
   latitude: 1.5
 
 two:
@@ -17,5 +17,5 @@ two:
   email: MyString
   geofence: MyString
   location: MyString
-  longitude: 1.5
+  float: 
   latitude: 1.5

@@ -7,7 +7,7 @@ class CreateAdmins < ActiveRecord::Migration[5.2]
       t.string :email
       t.string :geofence
       t.string :location
-      t.float :longitude
+      t.longitude :float
       t.float :latitude
 
       t.timestamps

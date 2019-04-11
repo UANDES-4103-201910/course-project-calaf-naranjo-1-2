@@ -8,7 +8,7 @@ one:
   username: MyString
   bio: MyText
   post: 
-  location: MyString
+  string: 
 
 two:
   email: MyString
@@ -18,4 +18,4 @@ two:
   username: MyString
   bio: MyText
   post: 
-  location: MyString
+  string: 
