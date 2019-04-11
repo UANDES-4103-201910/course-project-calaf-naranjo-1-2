@@ -17,7 +17,7 @@ class SuperAdminsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create super_admin" do
     assert_difference('SuperAdmin.count') do
-      post super_admins_url, params: { super_admin: { bio: @super_admin.bio, email: @super_admin.email, latitude: @super_admin.latitude, longitude: @super_admin.longitude, password: @super_admin.password, post: @super_admin.post, string: @super_admin.string, username: @super_admin.username } }
+      post super_admins_url, params: { super_admin: { bio: @super_admin.bio, email: @super_admin.email, latitude: @super_admin.latitude, location: @super_admin.location, longitude: @super_admin.longitude, password: @super_admin.password, post_id: @super_admin.post_id, username: @super_admin.username } }
     end
 
     assert_redirected_to super_admin_url(SuperAdmin.last)
@@ -34,7 +34,7 @@ class SuperAdminsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update super_admin" do
-    patch super_admin_url(@super_admin), params: { super_admin: { bio: @super_admin.bio, email: @super_admin.email, latitude: @super_admin.latitude, longitude: @super_admin.longitude, password: @super_admin.password, post: @super_admin.post, string: @super_admin.string, username: @super_admin.username } }
+    patch super_admin_url(@super_admin), params: { super_admin: { bio: @super_admin.bio, email: @super_admin.email, latitude: @super_admin.latitude, location: @super_admin.location, longitude: @super_admin.longitude, password: @super_admin.password, post_id: @super_admin.post_id, username: @super_admin.username } }
     assert_redirected_to super_admin_url(@super_admin)
   end
 

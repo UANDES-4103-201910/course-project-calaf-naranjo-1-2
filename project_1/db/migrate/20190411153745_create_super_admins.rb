@@ -7,8 +7,8 @@ class CreateSuperAdmins < ActiveRecord::Migration[5.2]
       t.float :longitude
       t.string :username
       t.text :bio
-      t.reference :post
-      t.location :string
+      t.references :post, foreign_key: true
+      t.string :location
 
       t.timestamps
     end

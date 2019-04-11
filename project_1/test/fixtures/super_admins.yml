@@ -7,8 +7,8 @@ one:
   longitude: 1.5
   username: MyString
   bio: MyText
-  post: 
-  string: 
+  post: one
+  location: MyString
 
 two:
   email: MyString
@@ -17,5 +17,5 @@ two:
   longitude: 1.5
   username: MyString
   bio: MyText
-  post: 
-  string: 
+  post: two
+  location: MyString

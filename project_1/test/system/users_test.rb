@@ -16,13 +16,13 @@ class UsersTest < ApplicationSystemTestCase
 
     fill_in "Bio", with: @user.bio
     check "Blacklisted" if @user.blacklisted
-    fill_in "Blocked", with: @user.blocked
+    check "Blocked" if @user.blocked
     fill_in "Email", with: @user.email
     fill_in "Latitude", with: @user.latitude
     fill_in "Location", with: @user.location
     fill_in "Longitude", with: @user.longitude
     fill_in "Password", with: @user.password
-    fill_in "Post", with: @user.post
+    fill_in "Post", with: @user.post_id
     check "Suspended" if @user.suspended
     fill_in "Username", with: @user.username
     click_on "Create User"
@@ -37,13 +37,13 @@ class UsersTest < ApplicationSystemTestCase
 
     fill_in "Bio", with: @user.bio
     check "Blacklisted" if @user.blacklisted
-    fill_in "Blocked", with: @user.blocked
+    check "Blocked" if @user.blocked
     fill_in "Email", with: @user.email
     fill_in "Latitude", with: @user.latitude
     fill_in "Location", with: @user.location
     fill_in "Longitude", with: @user.longitude
     fill_in "Password", with: @user.password
-    fill_in "Post", with: @user.post
+    fill_in "Post", with: @user.post_id
     check "Suspended" if @user.suspended
     fill_in "Username", with: @user.username
     click_on "Update User"

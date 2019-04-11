@@ -69,6 +69,6 @@ class SuperAdminsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def super_admin_params
-      params.require(:super_admin).permit(:email, :password, :latitude, :longitude, :username, :bio, :post, :string)
+      params.require(:super_admin).permit(:email, :password, :latitude, :longitude, :username, :bio, :post_id, :location)
     end
 end

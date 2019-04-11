@@ -10,8 +10,8 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :location
       t.boolean :suspended
       t.boolean :blacklisted
-      t.bool :blocked
-      t.reference :post
+      t.boolean :blocked
+      t.references :post, foreign_key: true
 
       t.timestamps
     end

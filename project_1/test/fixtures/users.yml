@@ -10,8 +10,8 @@ one:
   location: MyString
   suspended: false
   blacklisted: false
-  blocked: 
-  post: 
+  blocked: false
+  post: one
 
 two:
   username: MyString
@@ -23,5 +23,5 @@ two:
   location: MyString
   suspended: false
   blacklisted: false
-  blocked: 
-  post: 
+  blocked: false
+  post: two

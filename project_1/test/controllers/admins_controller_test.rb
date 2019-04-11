@@ -17,7 +17,7 @@ class AdminsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create admin" do
     assert_difference('Admin.count') do
-      post admins_url, params: { admin: { bio: @admin.bio, email: @admin.email, float: @admin.float, geofence: @admin.geofence, latitude: @admin.latitude, location: @admin.location, password: @admin.password, username: @admin.username } }
+      post admins_url, params: { admin: { bio: @admin.bio, email: @admin.email, geofence: @admin.geofence, latitude: @admin.latitude, location: @admin.location, longitude: @admin.longitude, password: @admin.password, username: @admin.username } }
     end
 
     assert_redirected_to admin_url(Admin.last)
@@ -34,7 +34,7 @@ class AdminsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update admin" do
-    patch admin_url(@admin), params: { admin: { bio: @admin.bio, email: @admin.email, float: @admin.float, geofence: @admin.geofence, latitude: @admin.latitude, location: @admin.location, password: @admin.password, username: @admin.username } }
+    patch admin_url(@admin), params: { admin: { bio: @admin.bio, email: @admin.email, geofence: @admin.geofence, latitude: @admin.latitude, location: @admin.location, longitude: @admin.longitude, password: @admin.password, username: @admin.username } }
     assert_redirected_to admin_url(@admin)
   end
 

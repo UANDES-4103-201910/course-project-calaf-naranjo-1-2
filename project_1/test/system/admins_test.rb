@@ -16,10 +16,10 @@ class AdminsTest < ApplicationSystemTestCase
 
     fill_in "Bio", with: @admin.bio
     fill_in "Email", with: @admin.email
-    fill_in "Float", with: @admin.float
     fill_in "Geofence", with: @admin.geofence
     fill_in "Latitude", with: @admin.latitude
     fill_in "Location", with: @admin.location
+    fill_in "Longitude", with: @admin.longitude
     fill_in "Password", with: @admin.password
     fill_in "Username", with: @admin.username
     click_on "Create Admin"
@@ -34,10 +34,10 @@ class AdminsTest < ApplicationSystemTestCase
 
     fill_in "Bio", with: @admin.bio
     fill_in "Email", with: @admin.email
-    fill_in "Float", with: @admin.float
     fill_in "Geofence", with: @admin.geofence
     fill_in "Latitude", with: @admin.latitude
     fill_in "Location", with: @admin.location
+    fill_in "Longitude", with: @admin.longitude
     fill_in "Password", with: @admin.password
     fill_in "Username", with: @admin.username
     click_on "Update Admin"

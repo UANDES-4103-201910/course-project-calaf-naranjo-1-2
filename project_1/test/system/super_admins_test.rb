@@ -17,10 +17,10 @@ class SuperAdminsTest < ApplicationSystemTestCase
     fill_in "Bio", with: @super_admin.bio
     fill_in "Email", with: @super_admin.email
     fill_in "Latitude", with: @super_admin.latitude
+    fill_in "Location", with: @super_admin.location
     fill_in "Longitude", with: @super_admin.longitude
     fill_in "Password", with: @super_admin.password
-    fill_in "Post", with: @super_admin.post
-    fill_in "String", with: @super_admin.string
+    fill_in "Post", with: @super_admin.post_id
     fill_in "Username", with: @super_admin.username
     click_on "Create Super admin"
 
@@ -35,10 +35,10 @@ class SuperAdminsTest < ApplicationSystemTestCase
     fill_in "Bio", with: @super_admin.bio
     fill_in "Email", with: @super_admin.email
     fill_in "Latitude", with: @super_admin.latitude
+    fill_in "Location", with: @super_admin.location
     fill_in "Longitude", with: @super_admin.longitude
     fill_in "Password", with: @super_admin.password
-    fill_in "Post", with: @super_admin.post
-    fill_in "String", with: @super_admin.string
+    fill_in "Post", with: @super_admin.post_id
     fill_in "Username", with: @super_admin.username
     click_on "Update Super admin"
 
