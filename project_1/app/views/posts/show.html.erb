@@ -1,23 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Location:</strong>
-  <%= @post.location %>
-</p>
-
-<p>
-  <strong>Privacy:</strong>
-  <%= @post.privacy %>
-</p>
-
-<p>
-  <strong>Resolve:</strong>
-  <%= @post.resolve %>
-</p>
-
-<p>
-  <strong>Date:</strong>
-  <%= @post.date %>
+  <strong>User:</strong>
+  <%= @post.user %>
 </p>
 
 <p>
@@ -31,18 +16,23 @@
 </p>
 
 <p>
-  <strong>Dumped:</strong>
-  <%= @post.dumped %>
+  <strong>Open:</strong>
+  <%= @post.open %>
 </p>
 
 <p>
-  <strong>Latitude:</strong>
-  <%= @post.latitude %>
+  <strong>Location:</strong>
+  <%= @post.location %>
 </p>
 
 <p>
-  <strong>Longitude:</strong>
-  <%= @post.longitude %>
+  <strong>Solved:</strong>
+  <%= @post.solved %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @post.date %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |

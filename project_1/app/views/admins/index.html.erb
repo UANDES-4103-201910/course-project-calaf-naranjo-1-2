@@ -5,14 +5,9 @@
 <table>
   <thead>
     <tr>
-      <th>Username</th>
-      <th>Password</th>
-      <th>Bio</th>
-      <th>Email</th>
+      <th>User</th>
+      <th>Super</th>
       <th>Geofence</th>
-      <th>Location</th>
-      <th>Longitude</th>
-      <th>Latitude</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,14 +15,9 @@
   <tbody>
     <% @admins.each do |admin| %>
       <tr>
-        <td><%= admin.username %></td>
-        <td><%= admin.password %></td>
-        <td><%= admin.bio %></td>
-        <td><%= admin.email %></td>
+        <td><%= admin.user %></td>
+        <td><%= admin.super %></td>
         <td><%= admin.geofence %></td>
-        <td><%= admin.location %></td>
-        <td><%= admin.longitude %></td>
-        <td><%= admin.latitude %></td>
         <td><%= link_to 'Show', admin %></td>
         <td><%= link_to 'Edit', edit_admin_path(admin) %></td>
         <td><%= link_to 'Destroy', admin, method: :delete, data: { confirm: 'Are you sure?' } %></td>

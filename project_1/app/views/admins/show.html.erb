@@ -1,43 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Username:</strong>
-  <%= @admin.username %>
+  <strong>User:</strong>
+  <%= @admin.user %>
 </p>
 
 <p>
-  <strong>Password:</strong>
-  <%= @admin.password %>
-</p>
-
-<p>
-  <strong>Bio:</strong>
-  <%= @admin.bio %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @admin.email %>
+  <strong>Super:</strong>
+  <%= @admin.super %>
 </p>
 
 <p>
   <strong>Geofence:</strong>
   <%= @admin.geofence %>
-</p>
-
-<p>
-  <strong>Location:</strong>
-  <%= @admin.location %>
-</p>
-
-<p>
-  <strong>Longitude:</strong>
-  <%= @admin.longitude %>
-</p>
-
-<p>
-  <strong>Latitude:</strong>
-  <%= @admin.latitude %>
 </p>
 
 <%= link_to 'Edit', edit_admin_path(@admin) %> |

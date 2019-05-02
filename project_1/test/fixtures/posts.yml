@@ -1,23 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  location: MyString
-  privacy: false
-  resolve: false
-  date: 2019-04-11 11:24:42
+  user: one
   title: MyString
   description: MyText
-  dumped: false
-  latitude: 1.5
-  longitude: 1.5
+  open: 
+  location: MyString
+  solved: 
+  date: 2019-05-01 21:01:16
 
 two:
-  location: MyString
-  privacy: false
-  resolve: false
-  date: 2019-04-11 11:24:42
+  user: two
   title: MyString
   description: MyText
-  dumped: false
-  latitude: 1.5
-  longitude: 1.5
+  open: 
+  location: MyString
+  solved: 
+  date: 2019-05-01 21:01:16

@@ -14,14 +14,9 @@ class AdminsTest < ApplicationSystemTestCase
     visit admins_url
     click_on "New Admin"
 
-    fill_in "Bio", with: @admin.bio
-    fill_in "Email", with: @admin.email
     fill_in "Geofence", with: @admin.geofence
-    fill_in "Latitude", with: @admin.latitude
-    fill_in "Location", with: @admin.location
-    fill_in "Longitude", with: @admin.longitude
-    fill_in "Password", with: @admin.password
-    fill_in "Username", with: @admin.username
+    fill_in "Super", with: @admin.super
+    fill_in "User", with: @admin.user_id
     click_on "Create Admin"
 
     assert_text "Admin was successfully created"
@@ -32,14 +27,9 @@ class AdminsTest < ApplicationSystemTestCase
     visit admins_url
     click_on "Edit", match: :first
 
-    fill_in "Bio", with: @admin.bio
-    fill_in "Email", with: @admin.email
     fill_in "Geofence", with: @admin.geofence
-    fill_in "Latitude", with: @admin.latitude
-    fill_in "Location", with: @admin.location
-    fill_in "Longitude", with: @admin.longitude
-    fill_in "Password", with: @admin.password
-    fill_in "Username", with: @admin.username
+    fill_in "Super", with: @admin.super
+    fill_in "User", with: @admin.user_id
     click_on "Update Admin"
 
     assert_text "Admin was successfully updated"

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Innapropiates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Post</th>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @innapropiates.each do |innapropiate| %>
+      <tr>
+        <td><%= innapropiate.user %></td>
+        <td><%= innapropiate.post %></td>
+        <td><%= innapropiate.comment %></td>
+        <td><%= link_to 'Show', innapropiate %></td>
+        <td><%= link_to 'Edit', edit_innapropiate_path(innapropiate) %></td>
+        <td><%= link_to 'Destroy', innapropiate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Innapropiate', new_innapropiate_path %>

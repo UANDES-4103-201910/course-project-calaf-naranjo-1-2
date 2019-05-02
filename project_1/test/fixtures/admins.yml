@@ -1,21 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  username: MyString
-  password: MyString
-  bio: MyText
-  email: MyString
+  user: one
+  super: 
   geofence: MyString
-  location: MyString
-  longitude: 1.5
-  latitude: 1.5
 
 two:
-  username: MyString
-  password: MyString
-  bio: MyText
-  email: MyString
+  user: two
+  super: 
   geofence: MyString
-  location: MyString
-  longitude: 1.5
-  latitude: 1.5

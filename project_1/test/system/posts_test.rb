@@ -16,13 +16,11 @@ class PostsTest < ApplicationSystemTestCase
 
     fill_in "Date", with: @post.date
     fill_in "Description", with: @post.description
-    check "Dumped" if @post.dumped
-    fill_in "Latitude", with: @post.latitude
     fill_in "Location", with: @post.location
-    fill_in "Longitude", with: @post.longitude
-    check "Privacy" if @post.privacy
-    check "Resolve" if @post.resolve
+    fill_in "Open", with: @post.open
+    fill_in "Solved", with: @post.solved
     fill_in "Title", with: @post.title
+    fill_in "User", with: @post.user_id
     click_on "Create Post"
 
     assert_text "Post was successfully created"
@@ -35,13 +33,11 @@ class PostsTest < ApplicationSystemTestCase
 
     fill_in "Date", with: @post.date
     fill_in "Description", with: @post.description
-    check "Dumped" if @post.dumped
-    fill_in "Latitude", with: @post.latitude
     fill_in "Location", with: @post.location
-    fill_in "Longitude", with: @post.longitude
-    check "Privacy" if @post.privacy
-    check "Resolve" if @post.resolve
+    fill_in "Open", with: @post.open
+    fill_in "Solved", with: @post.solved
     fill_in "Title", with: @post.title
+    fill_in "User", with: @post.user_id
     click_on "Update Post"
 
     assert_text "Post was successfully updated"

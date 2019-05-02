@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :innapropiates
+  resources :dumpsters
+  resources :blacklists
+  resources :votes
+  resources :links
+  resources :attachments
+  resources :images
+  resources :profiles
   resources :users
   resources :guests
   resources :posts

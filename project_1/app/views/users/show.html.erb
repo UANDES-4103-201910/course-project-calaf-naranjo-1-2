@@ -1,11 +1,6 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p>
-
-<p>
   <strong>Email:</strong>
   <%= @user.email %>
 </p>
@@ -16,43 +11,8 @@
 </p>
 
 <p>
-  <strong>Bio:</strong>
-  <%= @user.bio %>
-</p>
-
-<p>
-  <strong>Latitude:</strong>
-  <%= @user.latitude %>
-</p>
-
-<p>
-  <strong>Longitude:</strong>
-  <%= @user.longitude %>
-</p>
-
-<p>
-  <strong>Location:</strong>
-  <%= @user.location %>
-</p>
-
-<p>
-  <strong>Suspended:</strong>
-  <%= @user.suspended %>
-</p>
-
-<p>
-  <strong>Blacklisted:</strong>
-  <%= @user.blacklisted %>
-</p>
-
-<p>
-  <strong>Blocked:</strong>
-  <%= @user.blocked %>
-</p>
-
-<p>
-  <strong>Post:</strong>
-  <%= @user.post %>
+  <strong>Name:</strong>
+  <%= @user.name %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |

@@ -14,17 +14,9 @@ class UsersTest < ApplicationSystemTestCase
     visit users_url
     click_on "New User"
 
-    fill_in "Bio", with: @user.bio
-    check "Blacklisted" if @user.blacklisted
-    check "Blocked" if @user.blocked
     fill_in "Email", with: @user.email
-    fill_in "Latitude", with: @user.latitude
-    fill_in "Location", with: @user.location
-    fill_in "Longitude", with: @user.longitude
+    fill_in "Name", with: @user.name
     fill_in "Password", with: @user.password
-    fill_in "Post", with: @user.post_id
-    check "Suspended" if @user.suspended
-    fill_in "Username", with: @user.username
     click_on "Create User"
 
     assert_text "User was successfully created"
@@ -35,17 +27,9 @@ class UsersTest < ApplicationSystemTestCase
     visit users_url
     click_on "Edit", match: :first
 
-    fill_in "Bio", with: @user.bio
-    check "Blacklisted" if @user.blacklisted
-    check "Blocked" if @user.blocked
     fill_in "Email", with: @user.email
-    fill_in "Latitude", with: @user.latitude
-    fill_in "Location", with: @user.location
-    fill_in "Longitude", with: @user.longitude
+    fill_in "Name", with: @user.name
     fill_in "Password", with: @user.password
-    fill_in "Post", with: @user.post_id
-    check "Suspended" if @user.suspended
-    fill_in "Username", with: @user.username
     click_on "Update User"
 
     assert_text "User was successfully updated"

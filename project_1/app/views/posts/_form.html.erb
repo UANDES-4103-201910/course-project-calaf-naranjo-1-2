@@ -12,23 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :location %>
-    <%= form.text_field :location %>
-  </div>
-
-  <div class="field">
-    <%= form.label :privacy %>
-    <%= form.check_box :privacy %>
-  </div>
-
-  <div class="field">
-    <%= form.label :resolve %>
-    <%= form.check_box :resolve %>
-  </div>
-
-  <div class="field">
-    <%= form.label :date %>
-    <%= form.datetime_select :date %>
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
   </div>
 
   <div class="field">
@@ -42,18 +27,23 @@
   </div>
 
   <div class="field">
-    <%= form.label :dumped %>
-    <%= form.check_box :dumped %>
+    <%= form.label :open %>
+    <%= form.text_field :open %>
   </div>
 
   <div class="field">
-    <%= form.label :latitude %>
-    <%= form.text_field :latitude %>
+    <%= form.label :location %>
+    <%= form.text_field :location %>
   </div>
 
   <div class="field">
-    <%= form.label :longitude %>
-    <%= form.text_field :longitude %>
+    <%= form.label :solved %>
+    <%= form.text_field :solved %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.datetime_select :date %>
   </div>
 
   <div class="actions">

@@ -1,27 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  username: MyString
   email: MyString
   password: MyString
-  bio: MyText
-  latitude: 1.5
-  longitude: 1.5
-  location: MyString
-  suspended: false
-  blacklisted: false
-  blocked: false
-  post: one
+  name: MyString
 
 two:
-  username: MyString
   email: MyString
   password: MyString
-  bio: MyText
-  latitude: 1.5
-  longitude: 1.5
-  location: MyString
-  suspended: false
-  blacklisted: false
-  blocked: false
-  post: two
+  name: MyString
