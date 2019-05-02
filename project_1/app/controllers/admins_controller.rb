@@ -69,6 +69,6 @@ class AdminsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def admin_params
-      params.require(:admin).permit(:user_id, :super, :geofence)
+      params.require(:admin).permit(:user_id, :super, :geofence_id)
     end
 end

@@ -14,7 +14,7 @@ class AdminsTest < ApplicationSystemTestCase
     visit admins_url
     click_on "New Admin"
 
-    fill_in "Geofence", with: @admin.geofence
+    fill_in "Geofence", with: @admin.geofence_id
     fill_in "Super", with: @admin.super
     fill_in "User", with: @admin.user_id
     click_on "Create Admin"
@@ -27,7 +27,7 @@ class AdminsTest < ApplicationSystemTestCase
     visit admins_url
     click_on "Edit", match: :first
 
-    fill_in "Geofence", with: @admin.geofence
+    fill_in "Geofence", with: @admin.geofence_id
     fill_in "Super", with: @admin.super
     fill_in "User", with: @admin.user_id
     click_on "Update Admin"

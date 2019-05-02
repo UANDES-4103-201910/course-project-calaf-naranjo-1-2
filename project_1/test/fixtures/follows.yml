@@ -2,10 +2,8 @@
 
 one:
   user: one
-  super: 
-  geofence: one
+  post: one
 
 two:
   user: two
-  super: 
-  geofence: two
+  post: two

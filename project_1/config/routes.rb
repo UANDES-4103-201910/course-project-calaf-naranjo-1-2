@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :follows
+  resources :geofences
   resources :innapropiates
   resources :dumpsters
   resources :blacklists
