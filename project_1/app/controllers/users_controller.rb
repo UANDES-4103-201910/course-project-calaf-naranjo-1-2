@@ -71,4 +71,21 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:email, :password, :name)
     end
+
+    #View Posts
+    def user_posts
+      Post.where(user: User.find(params[:id]))
+    end
+
+    #View Comments
+    def user_comments
+      Comment.where(user: User.find(params[:id]))
+    end
+
+    #View Votes
+    def user_votes
+      Vote.where(user: User.find(params[:id]))
+    end
+
+
 end
