@@ -28,6 +28,13 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Ruby File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -78,22 +85,20 @@
               <item name="course-project-calaf-naranjo-1-2" type="b2602c69:ProjectViewProjectNode" />
               <item name="course-project-calaf-naranjo-1-2" type="462c0819:PsiDirectoryNode" />
               <item name="project_1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="course-project-calaf-naranjo-1-2" type="b2602c69:ProjectViewProjectNode" />
               <item name="course-project-calaf-naranjo-1-2" type="462c0819:PsiDirectoryNode" />
               <item name="project_1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="course-project-calaf-naranjo-1-2" type="b2602c69:ProjectViewProjectNode" />
               <item name="course-project-calaf-naranjo-1-2" type="462c0819:PsiDirectoryNode" />
               <item name="project_1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="migrate" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -111,6 +116,13 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.settings.patched" value="true" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
+  </component>
+  <component name="RubyModuleManagerSettings">
+    <option name="blackListedRootsPaths">
+      <list>
+        <option value="$PROJECT_DIR$/project_1" />
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">

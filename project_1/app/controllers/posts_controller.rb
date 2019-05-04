@@ -71,4 +71,25 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:user_id, :title, :description, :open, :location, :solved, :date)
     end
+
+    #Comments of post
+    def post_comments
+      Comment.where(post: params[:id])
+    end
+
+    #Votes of post
+    def post_votes
+      Vote.where(post: params[:id])
+    end
+
+    #Images of post
+    def post_images
+      Image.where(post: params[:id])
+    end
+
+    #links of post
+    def post_links
+      Link.where(post: params[:id])
+    end
+
 end
