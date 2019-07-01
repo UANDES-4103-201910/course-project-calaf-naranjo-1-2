@@ -22,3 +22,5 @@ For this assignment, it has been developed a basic view of the web page of the p
             $ rails db:reset 
             
 8) A new user will be a normal user and not admin by default
+
+9)final demo
